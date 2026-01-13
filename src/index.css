@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@layer base {
+    body {
+        @apply bg-blue-100;
+    }
+}
+
+@utility option {
+    @apply bg-gray-200 px-2 py-1 rounded-md w-full text-left transition-all;
+    @apply hover:bg-gray-300;
+    
+    &.selected {
+        @apply bg-cyan-300 border-2 border-cyan-500;
+    }
+}
